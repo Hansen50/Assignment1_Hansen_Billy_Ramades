@@ -1,9 +1,9 @@
 package com.example.assignment1_hansenbillyramades
 
-class IncomeExpensesActivity(val financeManager: FinanceManager) {
-    var validInput = false
+class IncomeExpensesActivity(private val financeManager: FinanceManager) {
+
+    private var validInput = false
     fun menuIncomeExpenses() {
-        while (true) {
             println("Income & Expenses")
 
             // Input and validate income
@@ -38,4 +38,3 @@ class IncomeExpensesActivity(val financeManager: FinanceManager) {
             return
         }
     }
-}

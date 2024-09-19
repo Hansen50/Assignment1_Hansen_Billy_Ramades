@@ -1,6 +1,7 @@
 package com.example.assignment1_hansenbillyramades
 
-class TransactionHistoryActivity(val financeManager: FinanceManager) {
+class TransactionHistoryActivity (private val financeManager: FinanceManager) {
+
     fun showTransactionHistory() {
         println("Transaction History")
         val history = financeManager.getTransactionHistory()

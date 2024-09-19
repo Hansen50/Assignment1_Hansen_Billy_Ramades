@@ -41,7 +41,7 @@ class FinanceManager {
     fun getTransactionHistory(): List<Transaction> = transactions.toList()
 }
 
-class CheckBalanceActivity(val financeManager: FinanceManager) {
+class CheckBalanceActivity(private val financeManager: FinanceManager) {
     fun showBalance() {
         println("Your Balance is ${financeManager.getBalance()}")
     }

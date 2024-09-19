@@ -1,6 +1,6 @@
 package com.example.assignment1_hansenbillyramades
 
-class FinancialAnalysisActivity(val financeManager: FinanceManager) {
+class FinancialAnalysisActivity(private val financeManager: FinanceManager) {
     fun showFinancialAnalysis() {
         val totalIncome = financeManager.getTotalIncome()
         val totalExpense = financeManager.getTotalExpenses()
