@@ -20,7 +20,8 @@ Sebuah aplikasi yang mengelola pengeluaran dan pemasukan uang
 
 ```bash
   1. Pilih menu angka 1 yaitu input Income & expense
-  2. Input pemasukan dan pengeluaran dengan angka bertipe double (jika yang di input tidak sesuai maka akan mengeluarkan validasi)
+  2. Input pemasukan dan pengeluaran dengan angka bertipe double, 
+  (jika yang di input tidak sesuai maka akan mengeluarkan validasi)
   3. Jika inputan yang di isi sesuai maka akan mengeluarkan pesan data sudah di simpan
 ```
 
@@ -169,5 +170,24 @@ class TransactionHistoryActivity (val financeManager: FinanceManager) {
 
 ```bash
   1. Pilih menu angka 4 yaitu Financial Summary
-  2. Akan menampilkan total income dan expense yang telah di keluarkan serta saldo akhir  (Di sini menggunakan enum class Transaction Type yang berisikan INCOME & EXPENSE untuk memfilter ketika transaksi nya bertipe income maka jumlah income pada data transaksi akan di jjumlah )
+  2. Akan menampilkan total income dan expense yang telah di keluarkan serta saldo akhir 
+     (Di sini menggunakan enum class Transaction Type yang berisikan INCOME & EXPENSE untuk memfilter ketika transaksi nya bertipe income maka jumlah income pada data transaksi akan di jjumlah )
+```
+
+```bash
+ package com.example.assignment1_hansenbillyramades
+
+class FinancialAnalysisActivity(private val financeManager: FinanceManager) {
+    fun showFinancialAnalysis() {
+        val totalIncome = financeManager.getTotalIncome()
+        val totalExpense = financeManager.getTotalExpenses()
+        val balance = financeManager.getBalance()
+
+        println("Financial Analysis")
+        println("Total Income: $totalIncome")
+        println("Total Expenses: $totalExpense")
+        println("Balance: $balance")
+    }
+}
+ 
 ```
