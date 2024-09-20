@@ -1,6 +1,6 @@
 package com.example.assignment1_hansenbillyramades
 
-class TransactionHistoryActivity (private val financeManager: FinanceManager) {
+class TransactionHistoryActivity(private val financeManager: FinanceManager) {
 
     fun showTransactionHistory() {
         println("Transaction History")
@@ -9,6 +9,7 @@ class TransactionHistoryActivity (private val financeManager: FinanceManager) {
             println("No transactions recorded")
         } else {
             for (transaction in history) {
+                println("========||======")
                 println("${transaction.type} ${transaction.amount}")
             }
         }
