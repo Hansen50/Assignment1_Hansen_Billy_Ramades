@@ -16,6 +16,8 @@ Sebuah aplikasi yang mengelola pengeluaran dan pemasukan uang
 
 ## Cara menggunakan 
 
+![Screenshot 2024-09-18 173504](https://github.com/user-attachments/assets/b47cff95-61b4-48e1-b97d-449ff2108391)
+
 *Cara input pemasukan dan pengeluaran:*
 
 ```bash
@@ -24,6 +26,9 @@ Sebuah aplikasi yang mengelola pengeluaran dan pemasukan uang
   (jika yang di input tidak sesuai maka akan mengeluarkan validasi)
   3. Jika inputan yang di isi sesuai maka akan mengeluarkan pesan data sudah di simpan
 ```
+
+![Screenshot 2024-09-20 103233](https://github.com/user-attachments/assets/c82540b8-54f8-41e6-a276-b997d53166c6)
+
 
 ```bash
   package com.example.assignment1_hansenbillyramades
@@ -71,6 +76,9 @@ fun main() {
   3. Kembali ke menu awal
 ```
 
+![Screenshot 2024-09-18 220140](https://github.com/user-attachments/assets/d36ffd02-71ee-4d45-8573-67ccce8b5222)
+
+
 ```bash
 class FinanceManager {
 
@@ -116,6 +124,7 @@ class CheckBalanceActivity(val financeManager: FinanceManager) {
   2. Setelah itu akan menampilkan list transaksi yang di ambil dari data class Transaction yang berisikan tipe transaksi dan jumlah yang telah di input
   3. Kembali ke menu awal
 ```
+![Screenshot 2024-09-18 220250](https://github.com/user-attachments/assets/91d26be1-800c-4010-9263-3d1552f9dc56)
 
 ```bash
 class FinanceManager {
@@ -173,6 +182,7 @@ class TransactionHistoryActivity (val financeManager: FinanceManager) {
   2. Akan menampilkan total income dan expense yang telah di keluarkan serta saldo akhir 
      (Di sini menggunakan enum class Transaction Type yang berisikan INCOME & EXPENSE untuk memfilter ketika transaksi nya bertipe income maka jumlah income pada data transaksi akan di jjumlah )
 ```
+![Screenshot 2024-09-18 220428](https://github.com/user-attachments/assets/d20bf561-3492-49e9-801c-218a7bca7266)
 
 ```bash
  package com.example.assignment1_hansenbillyramades
