@@ -7,6 +7,7 @@ class IncomeExpensesActivity(private val financeManager: FinanceManager) {
             println("Income & Expenses")
 
             // Input and validate income
+        validInput = false
             while (!validInput) {
                 println("Input your Income: ")
                 val income = readlnOrNull()?.toDoubleOrNull()
@@ -16,7 +17,6 @@ class IncomeExpensesActivity(private val financeManager: FinanceManager) {
                     validInput = true
                     financeManager.addIncome(income)
                     println("The income is $income")
-                    continue
                 }
             }
 

@@ -8,6 +8,7 @@ fun main() {
     val transactionHistoryActivity = TransactionHistoryActivity(financeManager)
     val financialAnalysisActivity = FinancialAnalysisActivity(financeManager)
 
+    // menggunakan while looping yang dapat membuat pengulangan ketika pilih menu sampai kita memilih untuk break
     while (true) {
         println("\nWelcome to the Personal Finance Manager Application!!!")
         println("\nMain Menu")
