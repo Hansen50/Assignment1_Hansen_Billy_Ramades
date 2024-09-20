@@ -14,6 +14,41 @@ Sebuah aplikasi yang mengelola pengeluaran dan pemasukan uang
 - Histori transaksi (pengeluaran dan pemasukan)
 - Analisis total pengeluaran dan pemasukan
 
+## Class Finance Manager (berisikan fun/method)
+
+```bash
+class FinanceManager {
+
+    private val transactions = mutableListOf<Transaction>()
+    // default saldo dari awal
+    private var income: Double = 0.0
+    private var expenses: Double = 0.0
+
+    fun addIncome(amount: Double) {
+        income += amount
+        transactions.add(Transaction(TransactionType.INCOME, amount))
+    }
+
+    fun addExpense(amount: Double) {
+        expenses += amount
+        transactions.add(Transaction(TransactionType.EXPENSE, amount))
+    }
+
+    fun getBalance(): Double = income - expenses
+
+    fun getTotalIncome(): Double = transactions
+        .filter { it.type == TransactionType.INCOME }
+        .sumOf { it.amount }
+
+    fun getTotalExpenses(): Double = transactions
+        .filter { it.type == TransactionType.EXPENSE }
+        .sumOf { it.amount }
+
+    fun getTransactionHistory(): List<Transaction> = transactions.toList()
+}
+
+```
+
 ## Cara menggunakan 
 
 ![Screenshot 2024-09-18 173504](https://github.com/user-attachments/assets/b47cff95-61b4-48e1-b97d-449ff2108391)
