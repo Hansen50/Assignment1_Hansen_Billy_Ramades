@@ -2,7 +2,7 @@ package com.example.assignment1_hansenbillyramades
 
 fun main() {
 
-    val financeManager = FinanceManager()
+    val financeManager = FinanceManager
     val incomeExpensesActivity = IncomeExpensesActivity(financeManager)
     val checkBalanceActivity = CheckBalanceActivity(financeManager)
     val transactionHistoryActivity = TransactionHistoryActivity(financeManager)

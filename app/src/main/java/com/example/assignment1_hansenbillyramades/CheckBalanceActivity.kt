@@ -14,7 +14,7 @@ enum class TransactionType {
     EXPENSE
 }
 
-class FinanceManager {
+object FinanceManager {
 
 
     // properti di sini menggunakan private var (enkapsulasi) karena untuk menjaga konsistensi data nya,
